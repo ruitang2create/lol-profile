@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# external assets
+/public/official_assets/
