@@ -1,7 +1,22 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Router from "next/router";
+import styled from "styled-components";
+import { useState } from "react";
 
 export default function Home() {
+  const [searchId, setSearchId] = useState("");
+
+  const search = (e) => {
+    e.preventDefault();
+    if (searchId.length > 0) {
+      Router.push({
+        pathname: "/profile",
+        query: { summonerId: searchId },
+      });
+    }
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,6 +26,14 @@ export default function Home() {
       </Head>
 
       <h1>My League of Legends Profile</h1>
+      <SearchContainer>
+        <SearchForm onSubmit={search}>
+          <input
+            placeholder="Summoner Id..."
+            onChange={(e) => setSearchId(e.target.value)}
+          />
+        </SearchForm>
+      </SearchContainer>
 
       <footer className={styles.footer}>
         <a
@@ -22,5 +45,9 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
+
+const SearchContainer = styled.div``;
+
+const SearchForm = styled.form``;
