@@ -10,10 +10,7 @@ export default function Home() {
   const search = (e) => {
     e.preventDefault();
     if (searchId.length > 0) {
-      Router.push({
-        pathname: "/profile",
-        query: { summonerId: searchId },
-      });
+      Router.push(`/profile/${searchId}`);
     }
   };
 

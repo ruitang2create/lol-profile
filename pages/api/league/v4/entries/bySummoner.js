@@ -1,16 +1,8 @@
 import { PlatformId } from '@fightmegg/riot-api'
 import riotAPI from '../../../../../lib/riot-api'
 
-const leagueEntry = {
-    rank: "",
-    wins: 0,
-    losses: 0,
-    tier: "",
-    leaguePoints: 0,
-}
-
 export default async (req, res) => {
-    if (req.body.username == null) {
+    if (req.body.summonerName == null) {
         return res.status(400).json({
             error: true,
         })
@@ -22,4 +14,16 @@ export default async (req, res) => {
             message: "Bad request body"
         })
     }
+
+    let summonerDTO = await riotAPI.summoner.getBySummonerName({
+        region: PlatformId.NA1,
+        summonerName: `${req.body.summonerName}`,
+    })
+
+    let leagueEntryDTO = await riotAPI.league.getEntriesBySummonerId({
+        region: PlatformId.NA1,
+        summonerId: summonerDTO.id,
+    })
+
+    res.status(200).json(leagueEntryDTO)
 }
