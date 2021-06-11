@@ -1,0 +1,23 @@
+.HeaderContainer {
+
+}
+
+.FooterContainer {
+    border-top: 1px solid #eeeeee;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.HeaderHomeBtn {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.HeaderSearchBar {
+
+}
+
+.HeaderSearchInput {
+    
+}

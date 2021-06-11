@@ -1,10 +1,29 @@
+import Link from 'next/link'
 import React from 'react'
+import styles from '../styles/layout.module.css'
 
-const Header = () => {
+const Header = ({ home }) => {
+    const search = (e) => {
+        e.preventDefault();
+        alert(`Search for ${e.target.value}`)
+    }
     return (
-        <div>
-            
-        </div>
+        <nav className={styles.HeaderContainer}>
+            <div>
+                <Link href="/">
+                    <a className={styles.HeaderHomeBtn}>LOL Profile</a>
+                </Link>
+            </div>
+            {
+                !home &&
+                <form onSubmit={search} className={styles.HeaderSearchBar}>
+                    <input
+                        className={styles.HeaderSearchInput}
+                        placeholder='Summoner Id...'
+                    />
+                </form>
+            }
+        </nav>
     )
 }
 

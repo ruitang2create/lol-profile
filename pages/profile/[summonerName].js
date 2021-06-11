@@ -1,20 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
+import Layout from '../../components/layout'
+import styles from '../../styles/Profile.module.css'
 
 const Profile = ({ data }) => {
 
-    if (!data) return <div>loading...</div>
+    if (!data) return <Layout>loading...</Layout>
 
     return (
-        <div>
-            <h1>{`${data.name}(lvl. ${data.summonerLevel})`}</h1>
-            <Image 
-                src={`/official_assets/11.12.1/img/profileicon/${data.profileIconId}.png`}
-                alt='summonerProfile'
-                width={128}
-                height={128}
-            />
-        </div>
+        <Layout>
+            <div className={styles.BasicInfoContainer}>
+                <Image
+                    src={`/official_assets/11.12.1/img/profileicon/${data.profileIconId}.png`}
+                    alt='summonerProfile'
+                    width={128}
+                    height={128}
+                />
+                <h1>{`${data.name}(lvl. ${data.summonerLevel})`}</h1>
+            </div>
+        </Layout>
     )
 }
 
