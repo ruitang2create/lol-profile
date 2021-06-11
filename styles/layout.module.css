@@ -1,5 +1,9 @@
 .HeaderContainer {
-
+    height: 50px;
+    width: 100%;
+    background: cornflowerblue;
+    border-bottom: 1px solid #667e8f;
+    padding: 10px;
 }
 
 .FooterContainer {
@@ -9,15 +13,24 @@
     text-align: center;
 }
 
+.HeaderHomeBtnWrapper {
+    float: left;
+}
+
 .HeaderHomeBtn {
     font-family: 'VT323', monospace;
     font-size: 30px;
+    color: #fff;
 }
 
 .HeaderSearchBar {
-
+    background: #fff;
+    padding: 4px;
+    border-radius: 3px;
+    float: right;
 }
 
 .HeaderSearchInput {
-    
+    border: 0;
+    outline: none;
 }
