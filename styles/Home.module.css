@@ -1,7 +1,12 @@
+.homePageContainer {
+  background: cornflowerblue;
+  height: calc(100vh - 50px);
+}
+
 .SearchContainer {
   text-align: center;
 }
 
 .SearchForm {
-  
+
 }

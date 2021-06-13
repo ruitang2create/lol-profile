@@ -2,7 +2,7 @@ import { PlatformId } from '@fightmegg/riot-api'
 import riotAPI from '../../../../../lib/riot-api'
 
 export default async (req, res) => {
-    if (req.body.summonerName == null) {
+    if (req.body.id == null) {
         return res.status(400).json({
             error: true,
         })
@@ -15,14 +15,9 @@ export default async (req, res) => {
         })
     }
 
-    let summonerDTO = await riotAPI.summoner.getBySummonerName({
+    const leagueEntryDTO = await riotAPI.league.getEntriesBySummonerId({
         region: PlatformId.NA1,
-        summonerName: `${req.body.summonerName}`,
-    })
-
-    let leagueEntryDTO = await riotAPI.league.getEntriesBySummonerId({
-        region: PlatformId.NA1,
-        summonerId: summonerDTO.id,
+        summonerId: req.body.id,
     })
 
     res.status(200).json(leagueEntryDTO)

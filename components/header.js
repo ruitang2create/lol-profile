@@ -1,11 +1,16 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/layout.module.css'
+import Router from 'next/router'
 
 const Header = ({ home }) => {
+    const [searchInput, setSearchInput] = useState("");
+
     const search = (e) => {
         e.preventDefault();
-        alert(`Search for ${e.target.value}`)
+        if (searchInput.length > 0) {
+            Router.push(`/profile/${searchInput}`);
+        }
     }
     return (
         <nav className={styles.HeaderContainer}>
@@ -20,6 +25,7 @@ const Header = ({ home }) => {
                     <input
                         className={styles.HeaderSearchInput}
                         placeholder='Summoner Id...'
+                        onChange={(e) => setSearchInput(e.target.value)}
                     />
                 </form>
             }

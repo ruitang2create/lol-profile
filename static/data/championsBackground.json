@@ -1,0 +1,618 @@
+{
+  "266": {
+    "name": "Aatrox",
+    "region": "Runeterra"
+  },
+  "103": {
+    "name": "Ahri",
+    "region": "Ionia"
+  },
+  "84": {
+    "name": "Akali",
+    "region": "Ionia"
+  },
+  "12": {
+    "name": "Alistar",
+    "region": "Runeterra"
+  },
+  "32": {
+    "name": "Amumu",
+    "region": "Shurima"
+  },
+  "34": {
+    "name": "Anivia",
+    "region": "Freljord"
+  },
+  "1": {
+    "name": "Annie",
+    "region": "Runeterra"
+  },
+  "523": {
+    "name": "Aphelios",
+    "region": "Targon"
+  },
+  "22": {
+    "name": "Ashe",
+    "region": "Freljord"
+  },
+  "136": {
+    "name": "Aurelion Sol",
+    "region": "Runeterra"
+  },
+  "268": {
+    "name": "Azir",
+    "region": "Shurima"
+  },
+  "432": {
+    "name": "Bard",
+    "region": "Runeterra"
+  },
+  "53": {
+    "name": "Blitzcrank",
+    "region": "Zaun"
+  },
+  "63": {
+    "name": "Brand",
+    "region": "Runeterra"
+  },
+  "201": {
+    "name": "Braum",
+    "region": "Freljord"
+  },
+  "51": {
+    "name": "Caitlyn",
+    "region": "Piltover"
+  },
+  "164": {
+    "name": "Camile",
+    "region": "Piltover"
+  },
+  "69": {
+    "name": "Cassiopeia",
+    "region": "Noxus"
+  },
+  "31": {
+    "name": "Chogath",
+    "region": "The Void"
+  },
+  "42": {
+    "name": "Corki",
+    "region": "Bandle City"
+  },
+  "122": {
+    "name": "Darius",
+    "region": "Noxus"
+  },
+  "131": {
+    "name": "Diana",
+    "region": "Targon"
+  },
+  "36": {
+    "name": "DrMundo",
+    "region": "Zaun"
+  },
+  "119": {
+    "name": "Draven",
+    "region": "Noxus"
+  },
+  "245": {
+    "name": "Ekko",
+    "region": "Zaun"
+  },
+  "60": {
+    "name": "Elise",
+    "region": "Shadow Isles"
+  },
+  "28": {
+    "name": "Evelynn",
+    "region": "Runeterra"
+  },
+  "81": {
+    "name": "Ezreal",
+    "region": "Piltover"
+  },
+  "9": {
+    "name": "Fiddlesticks",
+    "region": "Runeterra"
+  },
+  "114": {
+    "name": "Fiora",
+    "region": "Demacia"
+  },
+  "105": {
+    "name": "Fizz",
+    "region": "Runeterra"
+  },
+  "3": {
+    "name": "Demacia",
+    "region": "Zaun"
+  },
+  "41": {
+    "name": "Gangplank",
+    "region": "Bilgewater"
+  },
+  "86": {
+    "name": "Garen",
+    "region": "Demacia"
+  },
+  "150": {
+    "name": "Gnar",
+    "region": "Freljord"
+  },
+  "79": {
+    "name": "Gragas",
+    "region": "Freljord"
+  },
+  "104": {
+    "name": "Graves",
+    "region": "Bilgewater"
+  },
+  "887": {
+    "name": "Gwen",
+    "region": "Shadow Isles"
+  },
+  "120": {
+    "name": "Hecarim",
+    "region": "Shadow Isles"
+  },
+  "74": {
+    "name": "Heimerdinger",
+    "region": "Piltover"
+  },
+  "420": {
+    "name": "Illaoi",
+    "region": "Bilgewater"
+  },
+  "39": {
+    "name": "Irelia",
+    "region": "Ionia"
+  },
+  "427": {
+    "name": "Ivern",
+    "region": "Ionia"
+  },
+  "40": {
+    "name": "Janna",
+    "region": "Zaun"
+  },
+  "59": {
+    "name": "JarvanIV",
+    "region": "Demacia"
+  },
+  "24": {
+    "name": "Jax",
+    "region": "Runeterra"
+  },
+  "126": {
+    "name": "Jayce",
+    "region": "Piltover"
+  },
+  "202": {
+    "name": "Jhin",
+    "region": "Ionia"
+  },
+  "222": {
+    "name": "Jinx",
+    "region": "Zaun"
+  },
+  "145": {
+    "name": "Kaisa",
+    "region": "The Void"
+  },
+  "429": {
+    "name": "Kalista",
+    "region": "Shadow Isles"
+  },
+  "43": {
+    "name": "Karma",
+    "region": "Ionia"
+  },
+  "30": {
+    "name": "Karthus",
+    "region": "Shadow Isles"
+  },
+  "38": {
+    "name": "Kassadin",
+    "region": "The Void"
+  },
+  "55": {
+    "name": "Katarina",
+    "region": "Noxus"
+  },
+  "10": {
+    "name": "Kayle",
+    "region": "Demacia"
+  },
+  "141": {
+    "name": "Kayn",
+    "region": "Ionia"
+  },
+  "85": {
+    "name": "Kennen",
+    "region": "Ionia"
+  },
+  "121": {
+    "name": "Khazix",
+    "region": "The Void"
+  },
+  "203": {
+    "name": "Kindred",
+    "region": "Runeterra"
+  },
+  "240": {
+    "name": "Kled",
+    "region": "Noxus"
+  },
+  "96": {
+    "name": "KogMaw",
+    "region": "The Void"
+  },
+  "7": {
+    "name": "Leblanc",
+    "region": "Noxus"
+  },
+  "64": {
+    "name": "LeeSin",
+    "region": "Ionia"
+  },
+  "89": {
+    "name": "Leona",
+    "region": "Targon"
+  },
+  "876": {
+    "name": "Lillia",
+    "region": "Ionia"
+  },
+  "127": {
+    "name": "Lissandra",
+    "region": "Freljord"
+  },
+  "236": {
+    "name": "Lucian",
+    "region": "Runeterra"
+  },
+  "117": {
+    "name": "Lulu",
+    "region": "Bandle City"
+  },
+  "99": {
+    "name": "Lux",
+    "region": "Demacia"
+  },
+  "54": {
+    "name": "Malphite",
+    "region": "Ixtal"
+  },
+  "90": {
+    "name": "Malzahar",
+    "region": "The Void"
+  },
+  "57": {
+    "name": "Maokai",
+    "region": "Shadow Isles"
+  },
+  "11": {
+    "name": "MasterYi",
+    "region": "Ionia"
+  },
+  "21": {
+    "name": "MissFortune",
+    "region": "Bilgewater"
+  },
+  "82": {
+    "name": "Mordekaiser",
+    "region": "Noxus"
+  },
+  "25": {
+    "name": "Morgana",
+    "region": "Demacia"
+  },
+  "267": {
+    "name": "Nami",
+    "region": "Runeterra"
+  },
+  "75": {
+    "name": "Nasus",
+    "region": "Shurima"
+  },
+  "111": {
+    "name": "Nautilus",
+    "region": "Bilgewater"
+  },
+  "518": {
+    "name": "Neeko",
+    "region": "Ixtal"
+  },
+  "76": {
+    "name": "Nidalee",
+    "region": "Ixtal"
+  },
+  "56": {
+    "name": "Nocturne",
+    "region": "Runeterra"
+  },
+  "20": {
+    "name": "Nunu",
+    "region": "Freljord"
+  },
+  "2": {
+    "name": "Olaf",
+    "region": "Freljord"
+  },
+  "61": {
+    "name": "Orianna",
+    "region": "Piltover"
+  },
+  "516": {
+    "name": "Ornn",
+    "region": "Freljord"
+  },
+  "80": {
+    "name": "Pantheon",
+    "region": "Targon"
+  },
+  "78": {
+    "name": "Poppy",
+    "region": "Demacia"
+  },
+  "555": {
+    "name": "Pyke",
+    "region": "Bilgewater"
+  },
+  "246": {
+    "name": "Qiyana",
+    "region": "Ixtal"
+  },
+  "133": {
+    "name": "Quinn",
+    "region": "Demacia"
+  },
+  "487": {
+    "name": "Rakan",
+    "region": "Ionia"
+  },
+  "33": {
+    "name": "Rammus",
+    "region": "Shurima"
+  },
+  "421": {
+    "name": "RekSai",
+    "region": "The Void"
+  },
+  "526": {
+    "name": "Rell",
+    "region": "Noxus"
+  },
+  "58": {
+    "name": "Renekton",
+    "region": "Shurima"
+  },
+  "107": {
+    "name": "Rengar",
+    "region": "Ixtal"
+  },
+  "92": {
+    "name": "Riven",
+    "region": "Noxus"
+  },
+  "68": {
+    "name": "Rumble",
+    "region": "Bandle City"
+  },
+  "13": {
+    "name": "Ryze",
+    "region": "Runeterra"
+  },
+  "113": {
+    "name": "Sejuani",
+    "region": "Freljord"
+  },
+  "235": {
+    "name": "Senna",
+    "region": "Runeterra"
+  },
+  "147": {
+    "name": "Seraphine",
+    "region": "Piltover"
+  },
+  "875": {
+    "name": "Sett",
+    "region": "Ionia"
+  },
+  "35": {
+    "name": "Shaco",
+    "region": "Runeterra"
+  },
+  "98": {
+    "name": "Shen",
+    "region": "Ionia"
+  },
+  "102": {
+    "name": "Shyvana",
+    "region": "Demacia"
+  },
+  "27": {
+    "name": "Singed",
+    "region": "Zaun"
+  },
+  "14": {
+    "name": "Sion",
+    "region": "Noxus"
+  },
+  "15": {
+    "name": "Sivir",
+    "region": "Shurima"
+  },
+  "72": {
+    "name": "Skarner",
+    "region": "Shurima"
+  },
+  "37": {
+    "name": "Sona",
+    "region": "Demacia"
+  },
+  "16": {
+    "name": "Soraka",
+    "region": "Targon"
+  },
+  "50": {
+    "name": "Swain",
+    "region": "Noxus"
+  },
+  "517": {
+    "name": "Sylas",
+    "region": "Demacia"
+  },
+  "134": {
+    "name": "Syndra",
+    "region": "Ionia"
+  },
+  "223": {
+    "name": "TahmKench",
+    "region": "Runeterra"
+  },
+  "163": {
+    "name": "Taliyah",
+    "region": "Shurima"
+  },
+  "91": {
+    "name": "Talon",
+    "region": "Noxus"
+  },
+  "44": {
+    "name": "Taric",
+    "region": "Targon"
+  },
+  "17": {
+    "name": "Teemo",
+    "region": "Bandle City"
+  },
+  "412": {
+    "name": "Thresh",
+    "region": "Shadow Isles"
+  },
+  "18": {
+    "name": "Tristana",
+    "region": "Bandle City"
+  },
+  "48": {
+    "name": "Trundle",
+    "region": "Freljord"
+  },
+  "23": {
+    "name": "Tryndamere",
+    "region": "Freljord"
+  },
+  "4": {
+    "name": "TwistedFate",
+    "region": "Bilgewater"
+  },
+  "29": {
+    "name": "Twitch",
+    "region": "Zaun"
+  },
+  "77": {
+    "name": "Udyr",
+    "region": "Freljord"
+  },
+  "6": {
+    "name": "Urgot",
+    "region": "Zaun"
+  },
+  "110": {
+    "name": "Varus",
+    "region": "Ionia"
+  },
+  "67": {
+    "name": "Vayne",
+    "region": "Demacia"
+  },
+  "45": {
+    "name": "Veigar",
+    "region": "Bandle City"
+  },
+  "161": {
+    "name": "Velkoz",
+    "region": "The Void"
+  },
+  "254": {
+    "name": "Vi",
+    "region": "Piltover"
+  },
+  "234": {
+    "name": "Viego",
+    "region": "Shadow Isles"
+  },
+  "112": {
+    "name": "Viktor",
+    "region": "Zaun"
+  },
+  "8": {
+    "name": "Vladimir",
+    "region": "Noxus"
+  },
+  "106": {
+    "name": "Volibear",
+    "region": "Freljord"
+  },
+  "19": {
+    "name": "Warwick",
+    "region": "Zaun"
+  },
+  "62": {
+    "name": "MonkeyKing",
+    "region": "Ionia"
+  },
+  "498": {
+    "name": "Xayah",
+    "region": "Ionia"
+  },
+  "101": {
+    "name": "Xerath",
+    "region": "Shurima"
+  },
+  "5": {
+    "name": "XinZhao",
+    "region": "Demacia"
+  },
+  "157": {
+    "name": "Yasuo",
+    "region": "Ionia"
+  },
+  "777": {
+    "name": "Yone",
+    "region": "Ionia"
+  },
+  "83": {
+    "name": "Yorick",
+    "region": "Shadow Isles"
+  },
+  "350": {
+    "name": "Yuumi",
+    "region": "Bandle City"
+  },
+  "154": {
+    "name": "Zac",
+    "region": "Zaun"
+  },
+  "238": {
+    "name": "Zed",
+    "region": "Ionia"
+  },
+  "115": {
+    "name": "Ziggs",
+    "region": "Zaun"
+  },
+  "26": {
+    "name": "Zilean",
+    "region": "Runeterra"
+  },
+  "142": {
+    "name": "Zoe",
+    "region": "Targon"
+  },
+  "143": {
+    "name": "Zyra",
+    "region": "Ixtal"
+  }
+}

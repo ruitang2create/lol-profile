@@ -7,9 +7,8 @@
 }
 
 .FooterContainer {
-    border-top: 1px solid #eeeeee;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    font-size: 0.8rem;
+    padding: 0.5rem calc((100vw - 1200px)/2);
     text-align: center;
 }
 

@@ -5,7 +5,7 @@ import styles from '../styles/hero.module.css'
 const Hero = () => {
     return (
         <div className={styles.HeroContainer}>
-            <h1>My League of Legends Profile</h1>
+            <h1 className={styles.HeroTitle}>My League of Legends Profile</h1>
             <Image 
             src='/assets/images/HomeArt1.jpg'
             alt='homeArt'
