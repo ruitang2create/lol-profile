@@ -3,49 +3,47 @@ import Image from 'next/image'
 import Layout from '../../components/layout'
 import styles from '../../styles/Profile.module.css'
 import championsBgs from '../../static/data/championsBackground.json'
+import RankQueueBoard from '../../components/RankQueueBoard'
 
 const Profile = ({ data }) => {
     if (!data) return <Layout>loading...</Layout>
 
-    const favChamp = championsBgs[data.summonerMasteries[0].championId].name
+    const favChamp = data.summonerMasteries.length > 0 ? championsBgs[data.summonerMasteries[0].championId].name : null
+    console.log(favChamp)
 
     return (
         <Layout>
             <div className={styles.profilePageContainer}>
-                <img
-                    className={styles.profileHeroBg}
-                    src={`/official_assets/img/champion/splash/${favChamp}_0.jpg`}
-                    alt='profileHeroBg'
-                />
-                <div className={styles.BasicInfoContainer}>
-                    <Image
-                        src={`/official_assets/11.12.1/img/profileicon/${data.summonerDTO.profileIconId}.png`}
-                        alt='summonerProfile'
-                        width={128}
-                        height={128}
-                    />
-                    <h1>{`${data.summonerDTO.name}(lvl. ${data.summonerDTO.summonerLevel})`}</h1>
+                <div className={styles.profileHeroBgContainer}>
+                    {
+                        favChamp &&
+                        <div
+                            className={styles.profileHeroBg}
+                            style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,1)), url("/official_assets/img/champion/splash/${favChamp}_0.jpg")`}}
+                        />
+                    }
                 </div>
-                <div className={styles.RankInfoContainer}>
-                    <div className={styles.SoloInfoContainer}>
-                        <div className={styles.RankInfoTitle}>Solo/Duo Queue</div>
+                <div className={styles.profileInfoContainer}>
+                    <div className={styles.BasicInfoContainer}>
                         <Image
-                            src={`/assets/images/riot/emblems/Emblem_${data.summonerLeagueDTO.solo.tier}.png`}
-                            alt='rankEmblem'
-                            width={100}
-                            height={100 * 585 / 512}
+                            className={styles.SummonerProfileImg}
+                            src={`/official_assets/11.12.1/img/profileicon/${data.summonerDTO.profileIconId}.png`}
+                            alt='summonerProfile'
+                            width={128}
+                            height={128}
                         />
-                        <div className={styles.RankTier}>{`${data.summonerLeagueDTO.solo.tier} ${data.summonerLeagueDTO.solo.rank}`}</div>
+                        <div className={styles.SummonerLvl}>{`${data.summonerDTO.summonerLevel}`}</div>
+                        <h1>{`${data.summonerDTO.name}`}</h1>
                     </div>
-                    <div className={styles.FlexInfoContainer}>
-                        <div className={styles.RankInfoTitle}>Flexible Queue</div>
-                        <Image
-                            src={`/assets/images/riot/emblems/Emblem_${data.summonerLeagueDTO.flex.tier}.png`}
-                            alt='rankEmblem'
-                            width={100}
-                            height={100 * 585 / 512}
+                    <div className={styles.RankInfoContainer}>
+                        <RankQueueBoard 
+                            queueType = 'Solo/Duo'
+                            queue = {data.summonerLeagueDTO.solo}
                         />
-                        <div className={styles.RankTier}>{`${data.summonerLeagueDTO.flex.tier} ${data.summonerLeagueDTO.flex.rank}`}</div>
+                        <RankQueueBoard 
+                            queueType = 'Flexible'
+                            queue = {data.summonerLeagueDTO.flex}
+                        />
                     </div>
                 </div>
             </div>
@@ -147,6 +145,14 @@ export async function getServerSideProps(context) {
             summonerLeagueDTO = {
                 solo: summonerLeagueDTO[1],
                 flex: summonerLeagueDTO[0]
+            }
+        }
+    }
+
+    if (!summonerLeagueDTO) {
+        return {
+            props: {
+                error: true
             }
         }
     }
