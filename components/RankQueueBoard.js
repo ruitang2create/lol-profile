@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Profile.module.css';
 import Image from 'next/image';
-import { Doughnut, Chart } from 'react-chartjs-2';
+import { Pie, Chart } from 'react-chartjs-2';
 
 const RankQueueBoard = props => {
     const getWinRate = (wins, losses) => {
@@ -23,8 +23,7 @@ const RankQueueBoard = props => {
                 <div className={styles.DetailedRankInfoContainer}>
                     <div className={styles.LeaguePoint}>{`${props.queue.leaguePoints} LP`}</div>
                     <div className={styles.WinRate}>
-                        <h3 className={styles.WinRateNumber}>{getWinRate(props.queue.wins, props.queue.losses)}</h3>
-                        <Doughnut
+                        <Pie
                             data={{
                                 labels: [
                                     'Win',
@@ -44,6 +43,7 @@ const RankQueueBoard = props => {
                             height={100}
                             width={100}
                         />
+                        <h3 className={styles.WinRateNumber}>Win Rate: {getWinRate(props.queue.wins, props.queue.losses)}</h3>
                     </div>
                 </div>
             }

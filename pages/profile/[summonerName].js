@@ -19,7 +19,7 @@ const Profile = ({ data }) => {
                         favChamp &&
                         <div
                             className={styles.profileHeroBg}
-                            style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,1)), url("/official_assets/img/champion/splash/${favChamp}_0.jpg")`}}
+                            style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,1)), url("/official_assets/img/champion/splash/${favChamp}_0.jpg")` }}
                         />
                     }
                 </div>
@@ -36,14 +36,29 @@ const Profile = ({ data }) => {
                         <h1>{`${data.summonerDTO.name}`}</h1>
                     </div>
                     <div className={styles.RankInfoContainer}>
-                        <RankQueueBoard 
-                            queueType = 'Solo/Duo'
-                            queue = {data.summonerLeagueDTO.solo}
+                        <RankQueueBoard
+                            queueType='Solo/Duo'
+                            queue={data.summonerLeagueDTO.solo}
                         />
-                        <RankQueueBoard 
-                            queueType = 'Flexible'
-                            queue = {data.summonerLeagueDTO.flex}
+                        <RankQueueBoard
+                            queueType='Flexible'
+                            queue={data.summonerLeagueDTO.flex}
                         />
+                    </div>
+                </div>
+                <div className={styles.GameStatsContainer}>
+                    <div className={styles.PlayerStyleInfoContainer}>
+                        Player Stlye
+                    </div>
+                    <div className={styles.MatchHistoryContainer}>
+                        {
+                            data.matchList.length > 0 &&
+                            data.matchList.map((match, index) => {
+                                return (
+                                    <div className="MatchRecord" key={index}>{`Game ID: ${match.gameId}`}</div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
@@ -181,12 +196,37 @@ export async function getServerSideProps(context) {
 
     const summonerMasteries = await res.json()
 
+    res = await fetch('http://localhost:3001/api/summoner/matchHistory', {
+        method: 'POST',
+        headers: {
+            "content-type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            region: "na1",
+            accountId: summonerDTO.accountId,
+        })
+    })
+
+    if (!res.ok) {
+        return {
+            props: {
+                error: true
+            }
+        }
+    }
+
+    const matchList = await res.json()
+
+    // console.log(matchList)
+
     return {
         props: {
             data: {
                 summonerDTO,
                 summonerLeagueDTO,
-                summonerMasteries
+                summonerMasteries,
+                matchList
             }
         }
     }
