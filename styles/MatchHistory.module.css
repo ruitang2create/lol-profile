@@ -1,0 +1,96 @@
+.MatchRecord {
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid #eee;
+    border-top: none;
+    padding: 1rem;
+}
+
+.col1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.Runes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.ChampionProfile {
+    border-radius: 50%;
+}
+
+.RuneImage {
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.MainRune {
+    /* position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 0; */
+}
+
+.SecRune {
+    /* position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    right: 0; */
+}
+
+.col2 {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+.SummonerSpells {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.Items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.col3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr 2fr;
+}
+
+.KdaIndex {
+
+}
+
+.Kda {
+
+}
+
+.Cs {
+
+}
+
+.col4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Team1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.Team2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}

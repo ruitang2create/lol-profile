@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Layout from '../../components/layout'
 import styles from '../../styles/Profile.module.css'
 import championsBgs from '../../static/data/championsBackground.json'
 import RankQueueBoard from '../../components/RankQueueBoard'
+import MatchRecord from '../../components/MatchRecord'
 
 const Profile = ({ data }) => {
     if (!data) return <Layout>loading...</Layout>
@@ -19,7 +20,7 @@ const Profile = ({ data }) => {
                         favChamp &&
                         <div
                             className={styles.profileHeroBg}
-                            style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,1)), url("/official_assets/img/champion/splash/${favChamp}_0.jpg")` }}
+                            style={{ backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("/official_assets/img/champion/splash/${favChamp}_0.jpg")` }}
                         />
                     }
                 </div>
@@ -46,21 +47,31 @@ const Profile = ({ data }) => {
                         />
                     </div>
                 </div>
-                <div className={styles.GameStatsContainer}>
-                    <div className={styles.PlayerStyleInfoContainer}>
-                        Player Stlye
+                {/* <div className={styles.GameStatsContainer}> */}
+                <div className={styles.PlayerStyleInfoContainer}>
+                    Player Stlye
+                </div>
+                <div className={styles.MatchHistoryContainer}>
+                    <div className={styles.MatchHistoryFilter}>
+
                     </div>
-                    <div className={styles.MatchHistoryContainer}>
+                    <div className={styles.MatchHistoryListContainer}>
                         {
-                            data.matchList.length > 0 &&
-                            data.matchList.map((match, index) => {
+                            data.matchRecords.length > 0 &&
+                            data.matchRecords.map((record, index) => {
                                 return (
-                                    <div className="MatchRecord" key={index}>{`Game ID: ${match.gameId}`}</div>
+                                    <MatchRecord
+                                        key={index}
+                                        summonerName={data.summonerDTO.name}
+                                        playerInfo={record.playerInfo}
+                                        matchDetails={record.matchDetails}
+                                    />
                                 )
                             })
                         }
                     </div>
                 </div>
+                {/* </div> */}
             </div>
         </Layout>
     )
@@ -216,9 +227,9 @@ export async function getServerSideProps(context) {
         }
     }
 
-    const matchList = await res.json()
+    const matchRecords = await res.json()
 
-    // console.log(matchList)
+    console.log(matchRecords);
 
     return {
         props: {
@@ -226,7 +237,7 @@ export async function getServerSideProps(context) {
                 summonerDTO,
                 summonerLeagueDTO,
                 summonerMasteries,
-                matchList
+                matchRecords
             }
         }
     }

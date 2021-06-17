@@ -8,14 +8,25 @@ export default async (req, res) => {
         })
     }
 
-    let matchesInfo = await riotAPI.match.getMatchlistByAccount({
+    const matchesInfo = await riotAPI.match.getMatchlistByAccount({
         region: PlatformId.NA1,
         accountId: `${req.body.accountId}`,
         params: {
-            endIndex: 10,
+            endIndex: 5,
             beginIndex: 0
         }
     });
 
-    res.status(200).json(matchesInfo.matches)
+    const matchRecords = await Promise.all(matchesInfo.matches.map(async match => {
+        let matchRecord = await riotAPI.match.getById({
+            region: PlatformId.NA1,
+            matchId: match.gameId,
+        })
+        return {
+            matchDetails: matchRecord,
+            playerInfo: match,
+        }
+    }));
+
+    res.status(200).json(matchRecords);
 }
