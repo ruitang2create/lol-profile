@@ -32,8 +32,22 @@ const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
         return `/official_assets/11.12.1/img/spell/${spellPath}`;
     }
 
+    const getKdaIndex = () => {
+        if (playerDTO.stats.deaths == 0) return 'Perfect';
+        return ((playerDTO.stats.kills + playerDTO.stats.assists) / playerDTO.stats.deaths).toFixed(2);
+    }
+
+    const computeCs = () => {
+        const minions = playerDTO.stats.totalMinionsKilled + playerDTO.stats.neutralMinionsKilled;
+        const gameDurationInMins = matchDetails.gameDuration / 60;
+        const csPerMin = (minions / gameDurationInMins).toFixed(1);
+        return `${minions} (${csPerMin}) CS`;
+    }
+
+    const bgColor = playerDTO.stats.win ? 'rgba(0, 102, 204, 0.2)' : 'rgba(204, 0, 0, 0.2)';
+
     return (
-        <div className={styles.MatchRecord}>
+        <div className={styles.MatchRecord} style={{ backgroundColor: bgColor }}>
             <div className={styles.col1}>
                 <div className={styles.champProfileContainer}>
                     <Image
@@ -97,9 +111,12 @@ const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
                 </div>
             </div>
             <div className={styles.col3}>
-                <div className={styles.KdaIndex}></div>
-                <div className={styles.Kda}></div>
-                <div className={styles.Cs}></div>
+                <div className={styles.StatsContainer}>
+                    <div className={styles.KdaIndex}>{`${getKdaIndex()} KDA`}</div>
+                    <div className={styles.Kda}>{`${playerDTO.stats.kills}/`}<span className={styles.DeathNum}>{playerDTO.stats.deaths}</span>{`/${playerDTO.stats.assists}`}</div>
+                    <div className={styles.Cs}>{computeCs()}</div>
+                </div>
+                <div className={styles.AwardContainer}></div>
             </div>
             <div className={styles.col4}>
                 <div className={styles.Team1}></div>
