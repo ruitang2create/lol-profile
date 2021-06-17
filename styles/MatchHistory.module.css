@@ -1,7 +1,7 @@
 .MatchRecord {
     z-index: 10;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 2fr) 3fr;
     border-bottom: 2px solid #999;
     padding: 1rem;
 }
@@ -84,7 +84,7 @@
 }
 
 .ItemImg {
-    background-color: rgb(154, 187, 165);
+    background-color: rgba(187, 176, 154, 0.8);
     border: 1px solid #999 !important;
     border-radius: 15%;
 }
@@ -96,6 +96,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.GameResult {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
 }
 
 .KdaIndex {
@@ -117,16 +122,25 @@
 .col4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+    color: #000;
 }
 
-.Team1 {
+.TeamList {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
+    padding: 0.5rem 0;
 }
 
-.Team2 {
+.TeamListItem {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 5fr;
+}
+
+.TeamMemberIdContainer {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

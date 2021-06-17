@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import TeamList from './TeamList';
 import styles from '../styles/MatchHistory.module.css';
 import championsBgs from '../static/data/championsBackground.json';
 import runesDB from '../static/data/runes.json';
 import summonerspellsDB from '../static/data/summonerspells.json';
 
 const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
-    const playedChamp = championsBgs[playerInfo.champion].name;
     const identifyPlayer = (summonerName, playersList) => {
         let tempId = -1;
         for (let i = 0; i < playersList.length; i++) {
@@ -27,6 +27,11 @@ const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
         return `/official_assets/img/${runesDB[runesId].icon}`
     }
 
+    const getChampIconPath = (champId) => {
+        const champName = championsBgs[champId].name;
+        return `/official_assets/11.12.1/img/champion/${champName}.png`;
+    }
+
     const getSummonerSpellIconPath = (spellId) => {
         const spellPath = summonerspellsDB[spellId].image.full;
         return `/official_assets/11.12.1/img/spell/${spellPath}`;
@@ -44,7 +49,36 @@ const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
         return `${minions} (${csPerMin}) CS`;
     }
 
+    const constructTeamlist = () => {
+        let teamList = [];
+        const participantDTO = matchDetails.participants;
+        const participantBasic = matchDetails.participantIdentities;
+        for (let i = 0; i < participantBasic.length; i++) {
+            teamList.push({
+                summonerName: participantBasic[i].player.summonerName,
+                participantId: participantDTO[i].participantId,
+                championName: championsBgs[participantDTO[i].championId].name,
+                spell1Id: participantDTO[i].spell1Id,
+                spell2Id: participantDTO[i].spell2Id,
+                kills: participantDTO[i].stats.kills,
+                deaths: participantDTO[i].stats.deaths,
+                assists: participantDTO[i].stats.assists,
+                summonerSpell1Id: participantDTO[i].stats.perk0,
+                summonerSpell2Id: participantDTO[i].stats.perk4,
+            })
+        }
+        return teamList;
+    }
+
+    const teamInfoList = constructTeamlist();
+
     const bgColor = playerDTO.stats.win ? 'rgba(0, 102, 204, 0.2)' : 'rgba(204, 0, 0, 0.2)';
+
+    const getGameResult = () => {
+        const resultText = playerDTO.stats.win ? 'Victory' : 'Defeat';
+        const textColor = playerDTO.stats.win ? 'rgb(0, 102, 204)' : 'rgb(204, 0, 0)';
+        return <div className={styles.GameResult} style={{ color: textColor }}>{resultText}</div>
+    }
 
     return (
         <div className={styles.MatchRecord} style={{ backgroundColor: bgColor }}>
@@ -52,7 +86,7 @@ const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
                 <div className={styles.champProfileContainer}>
                     <Image
                         className={styles.ChampionProfile}
-                        src={`/official_assets/11.12.1/img/champion/${playedChamp}.png`}
+                        src={getChampIconPath(playerInfo.champion)}
                         width={200}
                         height={200}
                     />
@@ -112,6 +146,7 @@ const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
             </div>
             <div className={styles.col3}>
                 <div className={styles.StatsContainer}>
+                    {getGameResult()}
                     <div className={styles.KdaIndex}>{`${getKdaIndex()} KDA`}</div>
                     <div className={styles.Kda}>{`${playerDTO.stats.kills}/`}<span className={styles.DeathNum}>{playerDTO.stats.deaths}</span>{`/${playerDTO.stats.assists}`}</div>
                     <div className={styles.Cs}>{computeCs()}</div>
@@ -119,8 +154,12 @@ const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
                 <div className={styles.AwardContainer}></div>
             </div>
             <div className={styles.col4}>
-                <div className={styles.Team1}></div>
-                <div className={styles.Team2}></div>
+                <TeamList
+                    teamInfoList={teamInfoList.slice(0, 5)}
+                />
+                <TeamList
+                    teamInfoList={teamInfoList.slice(5, 10)}
+                />
             </div>
         </div>
     );

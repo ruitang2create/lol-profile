@@ -24,6 +24,26 @@ const Profile = ({ data }) => {
                         />
                     }
                 </div>
+                <div className={styles.MatchHistoryContainer}>
+                    <div className={styles.MatchHistoryFilter}>
+
+                    </div>
+                    <div className={styles.MatchHistoryListContainer}>
+                        {
+                            data.matchRecords.length > 0 &&
+                            data.matchRecords.map((record, index) => {
+                                return (
+                                    <MatchRecord
+                                        key={index}
+                                        summonerName={data.summonerDTO.name}
+                                        playerInfo={record.playerInfo}
+                                        matchDetails={record.matchDetails}
+                                    />
+                                )
+                            })
+                        }
+                    </div>
+                </div>
                 <div className={styles.profileInfoContainer}>
                     <div className={styles.BasicInfoContainer}>
                         <Image
@@ -47,31 +67,9 @@ const Profile = ({ data }) => {
                         />
                     </div>
                 </div>
-                {/* <div className={styles.GameStatsContainer}> */}
                 <div className={styles.PlayerStyleInfoContainer}>
                     Player Stlye
                 </div>
-                <div className={styles.MatchHistoryContainer}>
-                    <div className={styles.MatchHistoryFilter}>
-
-                    </div>
-                    <div className={styles.MatchHistoryListContainer}>
-                        {
-                            data.matchRecords.length > 0 &&
-                            data.matchRecords.map((record, index) => {
-                                return (
-                                    <MatchRecord
-                                        key={index}
-                                        summonerName={data.summonerDTO.name}
-                                        playerInfo={record.playerInfo}
-                                        matchDetails={record.matchDetails}
-                                    />
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-                {/* </div> */}
             </div>
         </Layout>
     )
