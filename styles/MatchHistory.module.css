@@ -2,8 +2,7 @@
     z-index: 10;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border: 2px solid #eee;
-    border-top: none;
+    border-bottom: 2px solid #999;
     padding: 1rem;
 }
 
@@ -11,6 +10,17 @@
     position: relative;
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+.champProfileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChampionProfile {
+    border-radius: 50%;
+    border: 2px solid #999 !important;
 }
 
 .Runes {
@@ -21,13 +31,9 @@
     justify-content: center;
 }
 
-.ChampionProfile {
-    border-radius: 50%;
-}
-
 .RuneImage {
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #333;
 }
 
 .MainRune {
@@ -46,18 +52,43 @@
 
 .col2 {
     display: grid;
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 3fr 4fr;
+}
+
+.SummonerSpellsContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 0 1rem;
 }
 
 .SummonerSpells {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SpellImg {
+    border: 1px solid #999 !important;
 }
 
 .Items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
+    row-gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.ItemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ItemImg {
+    background-color: rgb(154, 187, 165);
+    border: 1px solid #999 !important;
+    border-radius: 15%;
 }
 
 .col3 {
