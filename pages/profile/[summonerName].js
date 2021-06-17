@@ -5,6 +5,7 @@ import styles from '../../styles/Profile.module.css'
 import championsBgs from '../../static/data/championsBackground.json'
 import RankQueueBoard from '../../components/RankQueueBoard'
 import MatchRecord from '../../components/MatchRecord'
+import MatchHistoryFilterData from '../../static/data/matchHistoryFilterOptions.json';
 
 const Profile = ({ data }) => {
     if (!data) return <Layout>loading...</Layout>
@@ -26,7 +27,6 @@ const Profile = ({ data }) => {
                 </div>
                 <div className={styles.MatchHistoryContainer}>
                     <div className={styles.MatchHistoryFilter}>
-
                     </div>
                     <div className={styles.MatchHistoryListContainer}>
                         {

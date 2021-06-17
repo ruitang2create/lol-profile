@@ -3,14 +3,15 @@
     /* text-align: center; */
     height: calc(100vh - 50px);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 4fr 3fr 4fr;
     grid-gap: 1rem;
     padding: 1rem;
 }
 
 .profileInfoContainer {
     background-color: rgba(255, 255, 255, 0.6);
-    margin-top: 2rem;
+    z-index: 5;
+    height: calc(100% - 50px);
 }
 
 .BasicInfoContainer {
@@ -19,7 +20,6 @@
     display: inline-block;
     z-index: 10;
     position: relative;
-    background: inherit;
     width: 100%;
 }
 
@@ -30,7 +30,6 @@
     position: relative;
     display: flex;
     /* margin: auto calc((100vw - 500px) / 2); */
-    background: inherit;
     width: 100%;
 }
 
@@ -115,12 +114,14 @@
     color: rgb(165, 42, 42);
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 10;
+    height: calc(100% - 50px);
 }
 
 .MatchHistoryContainer {
     color: rgb(165, 42, 42);
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 10;
+    height: calc(100% - 50px);
 }
 
 .GameStatsContainer {

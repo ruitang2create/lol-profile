@@ -16,8 +16,8 @@ const TeamList = ({ teamInfoList }) => {
                         <div className={styles.TeamChampProfileContainer}>
                             <Image
                                 src={`/official_assets/11.12.1/img/champion/${member.championName}.png`}
-                                width={20}
-                                height={20}
+                                width={25}
+                                height={25}
                             />
                         </div>
                         <div className={styles.TeamMemberIdContainer}>

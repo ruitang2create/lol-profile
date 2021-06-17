@@ -1,0 +1,22 @@
+[
+    {
+        "tag": "All",
+        "queueId": -1
+    },
+    {
+        "tag": "Draft Pick",
+        "queueId": 400
+    },
+    {
+        "tag": "Solo Queue",
+        "queueId": 420
+    },
+    {
+        "tag": "Flex Queue",
+        "queueId": 440
+    },
+    {
+        "tag": "Aram",
+        "queueId": 450
+    }
+]
