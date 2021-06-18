@@ -1,626 +1,777 @@
 {
   "266": {
     "name": "Aatrox",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Fighter", "Tank"]
   },
   "103": {
     "name": "Ahri",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Mage", "Assassin"]
   },
   "84": {
     "name": "Akali",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Assassin"]
   },
   "12": {
     "name": "Alistar",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Tank", "Support"]
   },
   "32": {
     "name": "Amumu",
-    "region": "Shurima"
+    "region": "Shurima",
+    "tags": ["Tank", "Mage"]
   },
   "34": {
     "name": "Anivia",
-    "region": "Freljord"
+    "region": "Freljord",
+    "tags": ["Mage", "Support"]
   },
   "1": {
     "name": "Annie",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Mage"]
   },
   "523": {
     "name": "Aphelios",
-    "region": "Targon"
+    "region": "Targon",
+    "tags": ["Marksman"]
   },
   "22": {
     "name": "Ashe",
-    "region": "Freljord"
+    "region": "Freljord",
+    "tags": ["Marksman", "Support"]
   },
   "136": {
-    "name": "Aurelion Sol",
-    "region": "Runeterra"
+    "name": "AurelionSol",
+    "region": "Runeterra",
+    "tags": ["Mage"]
   },
   "268": {
     "name": "Azir",
-    "region": "Shurima"
+    "region": "Shurima",
+    "tags": ["Mage", "Marksman"]
   },
   "432": {
     "name": "Bard",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Support", "Mage"]
   },
   "53": {
     "name": "Blitzcrank",
-    "region": "Zaun"
+    "region": "Zaun",
+    "tags": ["Tank", "Fighter"]
   },
   "63": {
     "name": "Brand",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Mage"]
   },
   "201": {
     "name": "Braum",
-    "region": "Freljord"
+    "region": "Freljord",
+    "tags": ["Support", "Tank"]
   },
   "51": {
     "name": "Caitlyn",
-    "region": "Piltover"
+    "region": "Piltover",
+    "tags": ["Marksman"]
   },
   "164": {
     "name": "Camille",
-    "region": "Piltover"
+    "region": "Piltover",
+    "tags": ["Fighter", "Tank"]
   },
   "69": {
     "name": "Cassiopeia",
-    "region": "Noxus"
+    "region": "Noxus",
+    "tags": ["Mage"]
   },
   "31": {
     "name": "Chogath",
-    "region": "The Void"
+    "region": "The Void",
+    "tags": ["Tank", "Mage"]
   },
   "42": {
     "name": "Corki",
-    "region": "Bandle City"
+    "region": "Bandle City",
+    "tags": ["Marksman"]
   },
   "122": {
     "name": "Darius",
-    "region": "Noxus"
+    "region": "Noxus",
+    "tags": ["Fighter", "Tank"]
   },
   "131": {
     "name": "Diana",
-    "region": "Targon"
-  },
-  "36": {
-    "name": "DrMundo",
-    "region": "Zaun"
+    "region": "Targon",
+    "tags": ["Fighter", "Mage"]
   },
   "119": {
     "name": "Draven",
-    "region": "Noxus"
+    "region": "Noxus",
+    "tags": ["Marksman"]
+  },
+  "36": {
+    "name": "DrMundo",
+    "region": "Zaun",
+    "tags": ["Fighter", "Tank"]
   },
   "245": {
     "name": "Ekko",
-    "region": "Zaun"
+    "region": "Zaun",
+    "tags": ["Assassin", "Fighter"]
   },
   "60": {
     "name": "Elise",
-    "region": "Shadow Isles"
+    "region": "Shadow Isles",
+    "tags": ["Mage", "Fighter"]
   },
   "28": {
     "name": "Evelynn",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Assassin", "Mage"]
   },
   "81": {
     "name": "Ezreal",
-    "region": "Piltover"
+    "region": "Piltover",
+    "tags": ["Marksman", "Mage"]
   },
   "9": {
     "name": "Fiddlesticks",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Mage", "Support"]
   },
   "114": {
     "name": "Fiora",
-    "region": "Demacia"
+    "region": "Demacia",
+    "tags": ["Fighter", "Assassin"]
   },
   "105": {
     "name": "Fizz",
-    "region": "Runeterra"
-  },
-  "3": {
-    "name": "Demacia",
-    "region": "Zaun"
-  },
-  "41": {
-    "name": "Gangplank",
-    "region": "Bilgewater"
-  },
-  "86": {
-    "name": "Garen",
-    "region": "Demacia"
-  },
-  "150": {
-    "name": "Gnar",
-    "region": "Freljord"
-  },
-  "79": {
-    "name": "Gragas",
-    "region": "Freljord"
-  },
-  "104": {
-    "name": "Graves",
-    "region": "Bilgewater"
-  },
-  "887": {
-    "name": "Gwen",
-    "region": "Shadow Isles"
-  },
-  "120": {
-    "name": "Hecarim",
-    "region": "Shadow Isles"
-  },
-  "74": {
-    "name": "Heimerdinger",
-    "region": "Piltover"
+    "region": "Runeterra",
+    "tags": ["Assassin", "Fighter"]
   },
   "3": {
     "name": "Galio",
-    "region": "Demacia"
+    "region": "Demacia",
+    "tags": ["Tank", "Mage"]
+  },
+  "41": {
+    "name": "Gangplank",
+    "region": "Bilgewater",
+    "tags": ["Fighter"]
+  },
+  "86": {
+    "name": "Garen",
+    "region": "Demacia",
+    "tags": ["Fighter", "Tank"]
+  },
+  "150": {
+    "name": "Gnar",
+    "region": "Freljord",
+    "tags": ["Fighter", "Tank"]
+  },
+  "79": {
+    "name": "Gragas",
+    "region": "Freljord",
+    "tags": ["Fighter", "Mage"]
+  },
+  "104": {
+    "name": "Graves",
+    "region": "Bilgewater",
+    "tags": ["Marksman"]
+  },
+  "887": {
+    "name": "Gwen",
+    "region": "Shadow Isles",
+    "tags": ["Fighter", "Assassin"]
+  },
+  "120": {
+    "name": "Hecarim",
+    "region": "Shadow Isles",
+    "tags": ["Fighter", "Tank"]
+  },
+  "74": {
+    "name": "Heimerdinger",
+    "region": "Piltover",
+    "tags": ["Mage", "Support"]
   },
   "420": {
     "name": "Illaoi",
-    "region": "Bilgewater"
+    "region": "Bilgewater",
+    "tags": ["Fighter", "Tank"]
   },
   "39": {
     "name": "Irelia",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Fighter", "Assassin"]
   },
   "427": {
     "name": "Ivern",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Support", "Mage"]
   },
   "40": {
     "name": "Janna",
-    "region": "Zaun"
+    "region": "Zaun",
+    "tags": ["Support", "Mage"]
   },
   "59": {
     "name": "JarvanIV",
-    "region": "Demacia"
+    "region": "Demacia",
+    "tags": ["Tank", "Fighter"]
   },
   "24": {
     "name": "Jax",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Fighter", "Assassin"]
   },
   "126": {
     "name": "Jayce",
-    "region": "Piltover"
+    "region": "Piltover",
+    "tags": ["Fighter", "Marksman"]
   },
   "202": {
     "name": "Jhin",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Marksman", "Mage"]
   },
   "222": {
     "name": "Jinx",
-    "region": "Zaun"
+    "region": "Zaun",
+    "tags": ["Marksman"]
   },
   "145": {
     "name": "Kaisa",
-    "region": "The Void"
+    "region": "The Void",
+    "tags": ["Marksman"]
   },
   "429": {
     "name": "Kalista",
-    "region": "Shadow Isles"
+    "region": "Shadow Isles",
+    "tags": ["Marksman"]
   },
   "43": {
     "name": "Karma",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Mage", "Support"]
   },
   "30": {
     "name": "Karthus",
-    "region": "Shadow Isles"
+    "region": "Shadow Isles",
+    "tags": ["Mage"]
   },
   "38": {
     "name": "Kassadin",
-    "region": "The Void"
+    "region": "The Void",
+    "tags": ["Assassin", "Mage"]
   },
   "55": {
     "name": "Katarina",
-    "region": "Noxus"
+    "region": "Noxus",
+    "tags": ["Assassin", "Mage"]
   },
   "10": {
     "name": "Kayle",
-    "region": "Demacia"
+    "region": "Demacia",
+    "tags": ["Fighter", "Support"]
   },
   "141": {
     "name": "Kayn",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Fighter", "Assassin"]
   },
   "85": {
     "name": "Kennen",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Mage", "Marksman"]
   },
   "121": {
     "name": "Khazix",
-    "region": "The Void"
+    "region": "The Void",
+    "tags": ["Assassin"]
   },
   "203": {
     "name": "Kindred",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Marksman"]
   },
   "240": {
     "name": "Kled",
-    "region": "Noxus"
+    "region": "Noxus",
+    "tags": ["Fighter", "Tank"]
   },
   "96": {
     "name": "KogMaw",
-    "region": "The Void"
+    "region": "The Void",
+    "tags": ["Marksman", "Mage"]
   },
   "7": {
     "name": "Leblanc",
-    "region": "Noxus"
+    "region": "Noxus",
+    "tags": ["Assassin", "Mage"]
   },
   "64": {
     "name": "LeeSin",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Fighter", "Assassin"]
   },
   "89": {
     "name": "Leona",
-    "region": "Targon"
+    "region": "Targon",
+    "tags": ["Tank", "Support"]
   },
   "876": {
     "name": "Lillia",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Fighter", "Mage"]
   },
   "127": {
     "name": "Lissandra",
-    "region": "Freljord"
+    "region": "Freljord",
+    "tags": ["Mage"]
   },
   "236": {
     "name": "Lucian",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Marksman"]
   },
   "117": {
     "name": "Lulu",
-    "region": "Bandle City"
+    "region": "Bandle City",
+    "tags": ["Support", "Mage"]
   },
   "99": {
     "name": "Lux",
-    "region": "Demacia"
+    "region": "Demacia",
+    "tags": ["Mage", "Support"]
   },
   "54": {
     "name": "Malphite",
-    "region": "Ixtal"
+    "region": "Ixtal",
+    "tags": ["Tank", "Fighter"]
   },
   "90": {
     "name": "Malzahar",
-    "region": "The Void"
+    "region": "The Void",
+    "tags": ["Mage", "Assassin"]
   },
   "57": {
     "name": "Maokai",
-    "region": "Shadow Isles"
+    "region": "Shadow Isles",
+    "tags": ["Tank", "Mage"]
   },
   "11": {
     "name": "MasterYi",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Assassin", "Fighter"]
   },
   "21": {
     "name": "MissFortune",
-    "region": "Bilgewater"
-  },
-  "82": {
-    "name": "Mordekaiser",
-    "region": "Noxus"
-  },
-  "25": {
-    "name": "Morgana",
-    "region": "Demacia"
-  },
-  "267": {
-    "name": "Nami",
-    "region": "Runeterra"
-  },
-  "75": {
-    "name": "Nasus",
-    "region": "Shurima"
-  },
-  "111": {
-    "name": "Nautilus",
-    "region": "Bilgewater"
-  },
-  "518": {
-    "name": "Neeko",
-    "region": "Ixtal"
-  },
-  "76": {
-    "name": "Nidalee",
-    "region": "Ixtal"
-  },
-  "56": {
-    "name": "Nocturne",
-    "region": "Runeterra"
-  },
-  "20": {
-    "name": "Nunu",
-    "region": "Freljord"
-  },
-  "2": {
-    "name": "Olaf",
-    "region": "Freljord"
-  },
-  "61": {
-    "name": "Orianna",
-    "region": "Piltover"
-  },
-  "516": {
-    "name": "Ornn",
-    "region": "Freljord"
-  },
-  "80": {
-    "name": "Pantheon",
-    "region": "Targon"
-  },
-  "78": {
-    "name": "Poppy",
-    "region": "Demacia"
-  },
-  "555": {
-    "name": "Pyke",
-    "region": "Bilgewater"
-  },
-  "246": {
-    "name": "Qiyana",
-    "region": "Ixtal"
-  },
-  "133": {
-    "name": "Quinn",
-    "region": "Demacia"
-  },
-  "487": {
-    "name": "Rakan",
-    "region": "Ionia"
-  },
-  "33": {
-    "name": "Rammus",
-    "region": "Shurima"
-  },
-  "421": {
-    "name": "RekSai",
-    "region": "The Void"
-  },
-  "526": {
-    "name": "Rell",
-    "region": "Noxus"
-  },
-  "58": {
-    "name": "Renekton",
-    "region": "Shurima"
-  },
-  "107": {
-    "name": "Rengar",
-    "region": "Ixtal"
-  },
-  "92": {
-    "name": "Riven",
-    "region": "Noxus"
-  },
-  "68": {
-    "name": "Rumble",
-    "region": "Bandle City"
-  },
-  "13": {
-    "name": "Ryze",
-    "region": "Runeterra"
-  },
-  "113": {
-    "name": "Sejuani",
-    "region": "Freljord"
-  },
-  "235": {
-    "name": "Senna",
-    "region": "Runeterra"
-  },
-  "147": {
-    "name": "Seraphine",
-    "region": "Piltover"
-  },
-  "875": {
-    "name": "Sett",
-    "region": "Ionia"
-  },
-  "35": {
-    "name": "Shaco",
-    "region": "Runeterra"
-  },
-  "98": {
-    "name": "Shen",
-    "region": "Ionia"
-  },
-  "102": {
-    "name": "Shyvana",
-    "region": "Demacia"
-  },
-  "27": {
-    "name": "Singed",
-    "region": "Zaun"
-  },
-  "14": {
-    "name": "Sion",
-    "region": "Noxus"
-  },
-  "15": {
-    "name": "Sivir",
-    "region": "Shurima"
-  },
-  "72": {
-    "name": "Skarner",
-    "region": "Shurima"
-  },
-  "360": {
-    "name": "Samira",
-    "region": "Shurima"
-  },
-  "37": {
-    "name": "Sona",
-    "region": "Demacia"
-  },
-  "16": {
-    "name": "Soraka",
-    "region": "Targon"
-  },
-  "50": {
-    "name": "Swain",
-    "region": "Noxus"
-  },
-  "517": {
-    "name": "Sylas",
-    "region": "Demacia"
-  },
-  "134": {
-    "name": "Syndra",
-    "region": "Ionia"
-  },
-  "223": {
-    "name": "TahmKench",
-    "region": "Runeterra"
-  },
-  "163": {
-    "name": "Taliyah",
-    "region": "Shurima"
-  },
-  "91": {
-    "name": "Talon",
-    "region": "Noxus"
-  },
-  "44": {
-    "name": "Taric",
-    "region": "Targon"
-  },
-  "17": {
-    "name": "Teemo",
-    "region": "Bandle City"
-  },
-  "412": {
-    "name": "Thresh",
-    "region": "Shadow Isles"
-  },
-  "18": {
-    "name": "Tristana",
-    "region": "Bandle City"
-  },
-  "48": {
-    "name": "Trundle",
-    "region": "Freljord"
-  },
-  "23": {
-    "name": "Tryndamere",
-    "region": "Freljord"
-  },
-  "4": {
-    "name": "TwistedFate",
-    "region": "Bilgewater"
-  },
-  "29": {
-    "name": "Twitch",
-    "region": "Zaun"
-  },
-  "77": {
-    "name": "Udyr",
-    "region": "Freljord"
-  },
-  "6": {
-    "name": "Urgot",
-    "region": "Zaun"
-  },
-  "110": {
-    "name": "Varus",
-    "region": "Ionia"
-  },
-  "67": {
-    "name": "Vayne",
-    "region": "Demacia"
-  },
-  "45": {
-    "name": "Veigar",
-    "region": "Bandle City"
-  },
-  "161": {
-    "name": "Velkoz",
-    "region": "The Void"
-  },
-  "254": {
-    "name": "Vi",
-    "region": "Piltover"
-  },
-  "234": {
-    "name": "Viego",
-    "region": "Shadow Isles"
-  },
-  "112": {
-    "name": "Viktor",
-    "region": "Zaun"
-  },
-  "8": {
-    "name": "Vladimir",
-    "region": "Noxus"
-  },
-  "106": {
-    "name": "Volibear",
-    "region": "Freljord"
-  },
-  "19": {
-    "name": "Warwick",
-    "region": "Zaun"
+    "region": "Bilgewater",
+    "tags": ["Marksman"]
   },
   "62": {
     "name": "MonkeyKing",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Fighter", "Tank"]
+  },
+  "82": {
+    "name": "Mordekaiser",
+    "region": "Noxus",
+    "tags": ["Fighter"]
+  },
+  "25": {
+    "name": "Morgana",
+    "region": "Demacia",
+    "tags": ["Mage", "Support"]
+  },
+  "267": {
+    "name": "Nami",
+    "region": "Runeterra",
+    "tags": ["Mage", "Support"]
+  },
+  "75": {
+    "name": "Nasus",
+    "region": "Shurima",
+    "tags": ["Fighter", "Tank"]
+  },
+  "111": {
+    "name": "Nautilus",
+    "region": "Bilgewater",
+    "tags": ["Fighter", "Tank"]
+  },
+  "518": {
+    "name": "Neeko",
+    "region": "Ixtal",
+    "tags": ["Mage", "Support"]
+  },
+  "76": {
+    "name": "Nidalee",
+    "region": "Ixtal",
+    "tags": ["Assassin", "Mage"]
+  },
+  "56": {
+    "name": "Nocturne",
+    "region": "Runeterra",
+    "tags": ["Assassin", "Fighter"]
+  },
+  "20": {
+    "name": "Nunu",
+    "region": "Freljord",
+    "tags": ["Tank", "Fighter"]
+  },
+  "2": {
+    "name": "Olaf",
+    "region": "Freljord",
+    "tags": ["Fighter", "Tank"]
+  },
+  "61": {
+    "name": "Orianna",
+    "region": "Piltover",
+    "tags": ["Mage", "Support"]
+  },
+  "516": {
+    "name": "Ornn",
+    "region": "Freljord",
+    "tags": ["Tank", "Fighter"]
+  },
+  "80": {
+    "name": "Pantheon",
+    "region": "Targon",
+    "tags": ["Fighter", "Assassin"]
+  },
+  "78": {
+    "name": "Poppy",
+    "region": "Demacia",
+    "tags": ["Tank", "Fighter"]
+  },
+  "555": {
+    "name": "Pyke",
+    "region": "Bilgewater",
+    "tags": ["Support", "Assassin"]
+  },
+  "246": {
+    "name": "Qiyana",
+    "region": "Ixtal",
+    "tags": ["Assassin", "Fighter"]
+  },
+  "133": {
+    "name": "Quinn",
+    "region": "Demacia",
+    "tags": ["Marksman", "Assassin"]
+  },
+  "487": {
+    "name": "Rakan",
+    "region": "Ionia",
+    "tags": ["Support"]
+  },
+  "33": {
+    "name": "Rammus",
+    "region": "Shurima",
+    "tags": ["Tank", "Fighter"]
+  },
+  "421": {
+    "name": "RekSai",
+    "region": "The Void",
+    "tags": ["Fighter"]
+  },
+  "526": {
+    "name": "Rell",
+    "region": "Noxus",
+    "tags": ["Tank"]
+  },
+  "58": {
+    "name": "Renekton",
+    "region": "Shurima",
+    "tags": ["Fighter", "Tank"]
+  },
+  "107": {
+    "name": "Rengar",
+    "region": "Ixtal",
+    "tags": ["Assassin", "Fighter"]
+  },
+  "92": {
+    "name": "Riven",
+    "region": "Noxus",
+    "tags": ["Fighter", "Assassin"]
+  },
+  "68": {
+    "name": "Rumble",
+    "region": "Bandle City",
+    "tags": ["Fighter", "Mage"]
+  },
+  "13": {
+    "name": "Ryze",
+    "region": "Runeterra",
+    "tags": ["Mage", "Fighter"]
+  },
+  "360": {
+    "name": "Samira",
+    "region": "Shurima",
+    "tags": ["Marksman"]
+  },
+  "113": {
+    "name": "Sejuani",
+    "region": "Freljord",
+    "tags": ["Tank", "Fighter"]
+  },
+  "235": {
+    "name": "Senna",
+    "region": "Runeterra",
+    "tags": ["Marksman", "Support"]
+  },
+  "147": {
+    "name": "Seraphine",
+    "region": "Piltover",
+    "tags": ["Mage", "Support"]
+  },
+  "875": {
+    "name": "Sett",
+    "region": "Ionia",
+    "tags": ["Fighter", "Tank"]
+  },
+  "35": {
+    "name": "Shaco",
+    "region": "Runeterra",
+    "tags": ["Assassin"]
+  },
+  "98": {
+    "name": "Shen",
+    "region": "Ionia",
+    "tags": ["Tank"]
+  },
+  "102": {
+    "name": "Shyvana",
+    "region": "Demacia",
+    "tags": ["Fighter", "Tank"]
+  },
+  "27": {
+    "name": "Singed",
+    "region": "Zaun",
+    "tags": ["Tank", "Fighter"]
+  },
+  "14": {
+    "name": "Sion",
+    "region": "Noxus",
+    "tags": ["Tank", "Fighter"]
+  },
+  "15": {
+    "name": "Sivir",
+    "region": "Shurima",
+    "tags": ["Marksman"]
+  },
+  "72": {
+    "name": "Skarner",
+    "region": "Shurima",
+    "tags": ["Fighter", "Tank"]
+  },
+  "37": {
+    "name": "Sona",
+    "region": "Demacia",
+    "tags": ["Support", "Mage"]
+  },
+  "16": {
+    "name": "Soraka",
+    "region": "Targon",
+    "tags": ["Support", "Mage"]
+  },
+  "50": {
+    "name": "Swain",
+    "region": "Noxus",
+    "tags": ["Mage", "Fighter"]
+  },
+  "517": {
+    "name": "Sylas",
+    "region": "Demacia",
+    "tags": ["Mage", "Assassin"]
+  },
+  "134": {
+    "name": "Syndra",
+    "region": "Ionia",
+    "tags": ["Mage", "Support"]
+  },
+  "223": {
+    "name": "TahmKench",
+    "region": "Runeterra",
+    "tags": ["Support", "Tank"]
+  },
+  "163": {
+    "name": "Taliyah",
+    "region": "Shurima",
+    "tags": ["Mage", "Support"]
+  },
+  "91": {
+    "name": "Talon",
+    "region": "Noxus",
+    "tags": ["Assassin"]
+  },
+  "44": {
+    "name": "Taric",
+    "region": "Targon",
+    "tags": ["Support", "Fighter"]
+  },
+  "17": {
+    "name": "Teemo",
+    "region": "Bandle City",
+    "tags": ["Marksman", "Assassin"]
+  },
+  "412": {
+    "name": "Thresh",
+    "region": "Shadow Isles",
+    "tags": ["Support", "Fighter"]
+  },
+  "18": {
+    "name": "Tristana",
+    "region": "Bandle City",
+    "tags": ["Marksman", "Assassin"]
+  },
+  "48": {
+    "name": "Trundle",
+    "region": "Freljord",
+    "tags": ["Fighter", "Tank"]
+  },
+  "23": {
+    "name": "Tryndamere",
+    "region": "Freljord",
+    "tags": ["Fighter", "Assassin"]
+  },
+  "4": {
+    "name": "TwistedFate",
+    "region": "Bilgewater",
+    "tags": ["Mage"]
+  },
+  "29": {
+    "name": "Twitch",
+    "region": "Zaun",
+    "tags": ["Marksman", "Assassin"]
+  },
+  "77": {
+    "name": "Udyr",
+    "region": "Freljord",
+    "tags": ["Fighter", "Tank"]
+  },
+  "6": {
+    "name": "Urgot",
+    "region": "Zaun",
+    "tags": ["Fighter", "Tank"]
+  },
+  "110": {
+    "name": "Varus",
+    "region": "Ionia",
+    "tags": ["Marksman", "Mage"]
+  },
+  "67": {
+    "name": "Vayne",
+    "region": "Demacia",
+    "tags": ["Marksman", "Assassin"]
+  },
+  "45": {
+    "name": "Veigar",
+    "region": "Bandle City",
+    "tags": ["Mage"]
+  },
+  "161": {
+    "name": "Velkoz",
+    "region": "The Void",
+    "tags": ["Mage"]
+  },
+  "254": {
+    "name": "Vi",
+    "region": "Piltover",
+    "tags": ["Fighter", "Assassin"]
+  },
+  "234": {
+    "name": "Viego",
+    "region": "Shadow Isles",
+    "tags": ["Assassin", "Fighter"]
+  },
+  "112": {
+    "name": "Viktor",
+    "region": "Zaun",
+    "tags": ["Mage"]
+  },
+  "8": {
+    "name": "Vladimir",
+    "region": "Noxus",
+    "tags": ["Mage"]
+  },
+  "106": {
+    "name": "Volibear",
+    "region": "Freljord",
+    "tags": ["Fighter", "Tank"]
+  },
+  "19": {
+    "name": "Warwick",
+    "region": "Zaun",
+    "tags": ["Fighter", "Tank"]
   },
   "498": {
     "name": "Xayah",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Marksman"]
   },
   "101": {
     "name": "Xerath",
-    "region": "Shurima"
+    "region": "Shurima",
+    "tags": ["Mage"]
   },
   "5": {
     "name": "XinZhao",
-    "region": "Demacia"
+    "region": "Demacia",
+    "tags": ["Fighter", "Assassin"]
   },
   "157": {
     "name": "Yasuo",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Fighter", "Assassin"]
   },
   "777": {
     "name": "Yone",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Fighter", "Assassin"]
   },
   "83": {
     "name": "Yorick",
-    "region": "Shadow Isles"
+    "region": "Shadow Isles",
+    "tags": ["Fighter", "Tank"]
   },
   "350": {
     "name": "Yuumi",
-    "region": "Bandle City"
+    "region": "Bandle City",
+    "tags": ["Support", "Mage"]
   },
   "154": {
     "name": "Zac",
-    "region": "Zaun"
+    "region": "Zaun",
+    "tags": ["Tank", "Fighter"]
   },
   "238": {
     "name": "Zed",
-    "region": "Ionia"
+    "region": "Ionia",
+    "tags": ["Assassin"]
   },
   "115": {
     "name": "Ziggs",
-    "region": "Zaun"
+    "region": "Zaun",
+    "tags": ["Mage"]
   },
   "26": {
     "name": "Zilean",
-    "region": "Runeterra"
+    "region": "Runeterra",
+    "tags": ["Support", "Mage"]
   },
   "142": {
     "name": "Zoe",
-    "region": "Targon"
+    "region": "Targon",
+    "tags": ["Support", "Mage"]
   },
   "143": {
     "name": "Zyra",
-    "region": "Ixtal"
+    "region": "Ixtal",
+    "tags": ["Support", "Mage"]
   }
 }

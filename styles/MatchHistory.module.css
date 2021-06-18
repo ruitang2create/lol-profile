@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 2fr) 3fr;
     border-bottom: 2px solid #999;
-    padding: 1rem;
+    padding: 0.2rem;
 }
 
 .col1 {
