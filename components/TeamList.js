@@ -4,13 +4,9 @@ import styles from '../styles/MatchHistory.module.css';
 import Image from 'next/image';
 
 const TeamList = ({ teamInfoList }) => {
-    console.log(`Team: ${teamInfoList[0].championName}`);
-
-
     return (
         <div className={styles.TeamList}>
             {teamInfoList.map((member, index) => {
-                console.log('champion id: ' + typeof member.championId);
                 return (
                     <div className={styles.TeamListItem} key={index}>
                         <div className={styles.TeamChampProfileContainer}>
