@@ -6,12 +6,75 @@ import championsBgs from '../../static/data/championsBackground.json'
 import RankQueueBoard from '../../components/RankQueueBoard'
 import MatchRecord from '../../components/MatchRecord'
 import MatchHistoryFilterData from '../../static/data/matchHistoryFilterOptions.json';
+import { Radar } from 'react-chartjs-2';
 
 const Profile = ({ data }) => {
     if (!data) return <Layout>loading...</Layout>
+    const [matchesRange, setMatchesRange] = useState({
+        begin: 0,
+        end: 5,
+    });
+    const [champRolesCount, setChampRolesCount] = useState([0, 0, 0, 0, 0, 0]);
 
     const favChamp = data.summonerMasteries.length > 0 ? championsBgs[data.summonerMasteries[0].championId].name : null
-    console.log(favChamp)
+    const rolesPrefChartData = {
+        labels: ['Assassin', 'Fighter', 'Tank', 'Support', 'Marksman', 'Mage'],
+        datasets: [
+            {
+                label: 'Frequency',
+                backgroundColor: "rgba(34, 202, 236, .2)",
+                borderColor: "rgba(34, 202, 236, 1)",
+                pointBackgroundColor: "rgba(34, 202, 236, 1)",
+                poingBorderColor: "#fff",
+                pointHoverBackgroundColor: "#fff",
+                pointHoverBorderColor: "rgba(34, 202, 236, 1)",
+                data: champRolesCount
+            }
+        ]
+    };
+
+    const rolesPrefChartOptions = {
+        scale: {
+            ticks: {
+                stepSize: 10,
+                showLabelBackdrop: false,
+                backdropColor: "rgba(203, 197, 11, 1)"
+            },
+            angleLines: {
+                color: "rgba(255, 255, 255, .3)",
+                lineWidth: 1
+            },
+            gridLines: {
+                color: "rgba(255, 255, 255, .3)",
+                circular: true
+            }
+        }
+    }
+
+    const countRoles = () => {
+        let count = [0, 0, 0, 0, 0, 0];
+        data.matchRecords.forEach((record) => {
+            const champ = championsBgs[record.playerInfo.champion];
+            champ.tags.forEach(tag => {
+                if (tag == 'Assassin') {
+                    count[0]++;
+                } else if (tag == 'Fighter') {
+                    count[1]++;
+                } else if (tag == 'Tank') {
+                    count[2]++;
+                } else if (tag == 'Support') {
+                    count[3]++;
+                } else if (tag == 'Marksman') {
+                    count[4]++;
+                } else if (tag == 'Mage') {
+                    count[5]++;
+                }
+            })
+        })
+        setChampRolesCount(count);
+    }
+
+    countRoles();
 
     return (
         <Layout>
@@ -68,7 +131,13 @@ const Profile = ({ data }) => {
                     </div>
                 </div>
                 <div className={styles.PlayerStyleInfoContainer}>
-                    Player Stlye
+                    <div className={styles.RolesPrefChartContainer}>
+                        <h2>Roles Preference</h2>
+                        <Radar
+                            data={rolesPrefChartData}
+                            options={rolesPrefChartOptions}
+                        />
+                    </div>
                 </div>
             </div>
         </Layout>

@@ -12,7 +12,7 @@ export default async (req, res) => {
         region: PlatformId.NA1,
         accountId: `${req.body.accountId}`,
         params: {
-            endIndex: 5,
+            endIndex: 10,
             beginIndex: 0
         }
     });

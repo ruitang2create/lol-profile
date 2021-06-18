@@ -110,13 +110,6 @@
     overflow: hidden;
 }
 
-.PlayerStyleInfoContainer {
-    color: rgb(165, 42, 42);
-    background-color: rgba(255, 255, 255, 0.6);
-    z-index: 10;
-    height: calc(100% - 50px);
-}
-
 .MatchHistoryContainer {
     color: rgb(165, 42, 42);
     background-color: rgba(255, 255, 255, 0.6);
@@ -127,4 +120,15 @@
 .GameStatsContainer {
     z-index: 10;
     margin-top: 2rem;
+}
+
+.PlayerStyleInfoContainer {
+    color: rgb(65, 65, 65);
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 10;
+    height: calc(100% - 50px);
+}
+
+.RolesPrefChartContainer {
+    z-index: 12;
 }
