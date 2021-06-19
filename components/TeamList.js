@@ -18,7 +18,7 @@ const TeamList = ({ teamInfoList }) => {
                         </div>
                         <div className={styles.TeamMemberIdContainer}>
                             <Link href={`/profile/${member.summonerName}`}>
-                                <a>{member.summonerName}</a>
+                                <a rel='noreferrer noopener' target='_blank' >{member.summonerName}</a>
                             </Link>
                         </div>
                     </div>

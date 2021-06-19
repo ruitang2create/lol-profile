@@ -54,6 +54,9 @@ const MatchRecord = ({ summonerName, playerInfo, matchDetails }) => {
         const participantDTO = matchDetails.participants;
         const participantBasic = matchDetails.participantIdentities;
         for (let i = 0; i < participantBasic.length; i++) {
+            if (championsBgs[participantDTO[i].championId] == undefined) {
+                console.log(`****${participantDTO[i].championId}****`)
+            }
             teamList.push({
                 summonerName: participantBasic[i].player.summonerName,
                 participantId: participantDTO[i].participantId,

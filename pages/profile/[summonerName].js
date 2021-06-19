@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Layout from '../../components/layout'
 import styles from '../../styles/Profile.module.css'
@@ -15,13 +15,14 @@ const Profile = ({ data }) => {
         end: 5,
     });
     const [champRolesCount, setChampRolesCount] = useState([0, 0, 0, 0, 0, 0]);
+    const [displayMatches, setDisplayMatches] = useState(data.matchRecords.slice(0, 5));
 
     const favChamp = data.summonerMasteries.length > 0 ? championsBgs[data.summonerMasteries[0].championId].name : null
     const rolesPrefChartData = {
         labels: ['Assassin', 'Fighter', 'Tank', 'Support', 'Marksman', 'Mage'],
         datasets: [
             {
-                label: 'Frequency',
+                label: 'Played Frequency',
                 backgroundColor: "rgba(34, 202, 236, .2)",
                 borderColor: "rgba(34, 202, 236, 1)",
                 pointBackgroundColor: "rgba(34, 202, 236, 1)",
@@ -36,9 +37,8 @@ const Profile = ({ data }) => {
     const rolesPrefChartOptions = {
         scale: {
             ticks: {
-                stepSize: 10,
-                showLabelBackdrop: false,
-                backdropColor: "rgba(203, 197, 11, 1)"
+                showLabelBackdrop: true,
+                backdropColor: "rgba(255, 197, 11, 1)"
             },
             angleLines: {
                 color: "rgba(255, 255, 255, .3)",
@@ -74,7 +74,9 @@ const Profile = ({ data }) => {
         setChampRolesCount(count);
     }
 
-    countRoles();
+    useEffect(() => {
+        countRoles();
+    }, [data])
 
     return (
         <Layout>
