@@ -95,8 +95,8 @@ const Profile = ({ data }) => {
                     </div>
                     <div className={styles.MatchHistoryListContainer}>
                         {
-                            data.matchRecords.length > 0 &&
-                            data.matchRecords.map((record, index) => {
+                            data.matchRecords.slice(0, 5).length > 0 &&
+                            data.matchRecords.slice(0, 5).map((record, index) => {
                                 return (
                                     <MatchRecord
                                         key={index}
