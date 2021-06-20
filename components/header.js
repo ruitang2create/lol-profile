@@ -16,7 +16,7 @@ const Header = ({ home }) => {
         <nav className={styles.HeaderContainer}>
             <div className={styles.HeaderHomeBtnWrapper}>
                 <Link href="/">
-                    <a className={styles.HeaderHomeBtn}>League Profile</a>
+                    <a className={styles.HeaderHomeBtn}>Summoner X</a>
                 </Link>
             </div>
             {
