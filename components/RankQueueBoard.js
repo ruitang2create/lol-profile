@@ -4,15 +4,16 @@ import Image from 'next/image';
 import { Pie, Chart } from 'react-chartjs-2';
 
 const RankQueueBoard = props => {
+    const tier = props.queue.tier.toLowerCase();
     const getWinRate = (wins, losses) => {
-        return `${Math.round((wins/(wins+losses))*100)}%`;
+        return `${Math.round((wins / (wins + losses)) * 100)}%`;
     }
 
     return (
         <div className={styles.QueueInfoContainer}>
             <div className={styles.RankInfoTitle}>{`${props.queueType} Queue`}</div>
             <Image
-                src={`/assets/images/riot/emblems/Emblem_${props.queue.tier}.png`}
+                src={`/assets/images/riot/emblems/Emblem_${tier.charAt(0).toUpperCase() + tier.slice(1)}.png`}
                 alt='rankEmblem'
                 width={100}
                 height={100 * 585 / 512}
