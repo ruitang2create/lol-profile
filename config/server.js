@@ -1,0 +1,1 @@
+export const server = process.env.PROD_MODE === 'true' ? 'https://summoner-x.vercel.app' : 'http://localhost:3001';

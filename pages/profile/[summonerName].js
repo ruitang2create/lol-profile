@@ -7,6 +7,7 @@ import RankQueueBoard from '../../components/RankQueueBoard'
 import MatchRecord from '../../components/MatchRecord'
 import MatchHistoryFilterData from '../../static/data/matchHistoryFilterOptions.json';
 import { Radar } from 'react-chartjs-2';
+import { server } from '../../config/server';
 
 const Profile = ({ data }) => {
     if (!data) return <Layout>loading...</Layout>
@@ -147,7 +148,8 @@ const Profile = ({ data }) => {
 }
 
 export async function getServerSideProps(context) {
-    let res = await fetch('http://localhost:3001/api/summoner/v4/summoners/byName', {
+    let res = await fetch(`${server}/api/summoner/v4/summoners/byName`, {
+        
         method: 'POST',
         headers: {
             "content-type": "application/json",
@@ -179,7 +181,7 @@ export async function getServerSideProps(context) {
 
     console.log(summonerDTO)
 
-    res = await fetch('http://localhost:3001/api/league/v4/entries/bySummoner', {
+    res = await fetch(`${server}/api/league/v4/entries/bySummoner`, {
         method: 'POST',
         headers: {
             "content-type": "application/json",
@@ -254,7 +256,7 @@ export async function getServerSideProps(context) {
 
     console.log(summonerLeagueDTO)
 
-    res = await fetch('http://localhost:3001/api/champion-mastery/v4/champion-masteries/bySummoner', {
+    res = await fetch(`${server}/api/champion-mastery/v4/champion-masteries/bySummoner`, {
         method: 'POST',
         headers: {
             "content-type": "application/json",
@@ -276,7 +278,7 @@ export async function getServerSideProps(context) {
 
     const summonerMasteries = await res.json()
 
-    res = await fetch('http://localhost:3001/api/summoner/matchHistory', {
+    res = await fetch(`${server}/api/summoner/matchHistory`, {
         method: 'POST',
         headers: {
             "content-type": "application/json",
