@@ -10,6 +10,7 @@ import { Radar } from 'react-chartjs-2';
 import { server } from '../../config/server';
 
 const Profile = ({ data }) => {
+    console.log(`Server: ${server}`);
     if (!data) return <Layout>loading...</Layout>
     const [matchesRange, setMatchesRange] = useState({
         begin: 0,
