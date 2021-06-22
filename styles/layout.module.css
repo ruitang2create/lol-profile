@@ -6,14 +6,26 @@
     padding: 10px;
 }
 
-.FooterContainer {
-    font-size: clamp(1vh, );
-    padding: 0.5rem calc((100vw - 1200px)/2);
-    text-align: center;
-    z-index: 10;
-    position: absolute;
-    bottom: 0;
-    color: #eee;
+@media screen and (max-width: 1300px) {
+    .FooterContainer {
+        font-size: clamp(1vh, );
+        padding: 0.5rem calc((100vw - 1200px)/2);
+        text-align: center;
+        z-index: 10;
+        color: #999;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .FooterContainer {
+        font-size: clamp(1vh, );
+        padding: 0.5rem calc((100vw - 1200px)/2);
+        text-align: center;
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        color: #eee;
+    }   
 }
 
 .HeaderHomeBtnWrapper {

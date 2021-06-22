@@ -8,7 +8,7 @@ const Layout = ({ children, home }) => {
     return (
         <div>
             <Head>
-                <title>LOL Profile</title>
+                <title>Summoner X</title>
                 <meta name="description" content="Generate a unique summoner profile" />
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
