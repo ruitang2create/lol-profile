@@ -7,7 +7,7 @@
 }
 
 .FooterContainer {
-    font-size: 0.8rem;
+    font-size: clamp(1vh, );
     padding: 0.5rem calc((100vw - 1200px)/2);
     text-align: center;
     z-index: 10;

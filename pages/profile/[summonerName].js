@@ -92,25 +92,6 @@ const Profile = ({ data }) => {
                         />
                     }
                 </div>
-                <div className={styles.MatchHistoryContainer}>
-                    <div className={styles.MatchHistoryFilter}>
-                    </div>
-                    <div className={styles.MatchHistoryListContainer}>
-                        {
-                            data.matchRecords.slice(0, 5).length > 0 &&
-                            data.matchRecords.slice(0, 5).map((record, index) => {
-                                return (
-                                    <MatchRecord
-                                        key={index}
-                                        summonerName={data.summonerDTO.name}
-                                        playerInfo={record.playerInfo}
-                                        matchDetails={record.matchDetails}
-                                    />
-                                )
-                            })
-                        }
-                    </div>
-                </div>
                 <div className={styles.profileInfoContainer}>
                     <div className={styles.BasicInfoContainer}>
                         <Image
@@ -134,6 +115,25 @@ const Profile = ({ data }) => {
                         />
                     </div>
                 </div>
+                <div className={styles.MatchHistoryContainer}>
+                    <div className={styles.MatchHistoryFilter}>
+                    </div>
+                    <div className={styles.MatchHistoryListContainer}>
+                        {
+                            data.matchRecords.slice(0, 5).length > 0 &&
+                            data.matchRecords.slice(0, 5).map((record, index) => {
+                                return (
+                                    <MatchRecord
+                                        key={index}
+                                        summonerName={data.summonerDTO.name}
+                                        playerInfo={record.playerInfo}
+                                        matchDetails={record.matchDetails}
+                                    />
+                                )
+                            })
+                        }
+                    </div>
+                </div>
                 <div className={styles.PlayerStyleInfoContainer}>
                     <div className={styles.RolesPrefChartContainer}>
                         <h2>Roles Preference</h2>
@@ -150,7 +150,7 @@ const Profile = ({ data }) => {
 
 export async function getServerSideProps(context) {
     let res = await fetch(`${server}/api/summoner/v4/summoners/byName`, {
-        
+
         method: 'POST',
         headers: {
             "content-type": "application/json",
