@@ -17,14 +17,16 @@ export default function Home() {
   return (
     <Layout home={true}>
       <div className={styles.homePageContainer}>
-        <Hero />
-        <div className={styles.SearchContainer}>
-          <form className={styles.SearchForm} onSubmit={search}>
-            <input
-              placeholder="Summoner Id..."
-              onChange={(e) => setSearchId(e.target.value)}
-            />
-          </form>
+        <div className={styles.ContentWrapper}>
+          <Hero />
+          <div className={styles.SearchContainer}>
+            <form className={styles.SearchForm} onSubmit={search}>
+              <input
+                placeholder="Summoner Id..."
+                onChange={(e) => setSearchId(e.target.value)}
+              />
+            </form>
+          </div>
         </div>
       </div>
     </Layout>

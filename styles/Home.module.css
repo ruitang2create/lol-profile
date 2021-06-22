@@ -1,6 +1,11 @@
 .homePageContainer {
-  background: cornflowerblue;
+  background: rgb(29, 29, 29);
   height: calc(100vh - 50px);
+}
+
+.ContentWrapper {
+  position: relative;
+  top: 200px;
 }
 
 .SearchContainer {
