@@ -8,6 +8,7 @@ import MatchRecord from '../../components/MatchRecord'
 import MatchHistoryFilterData from '../../static/data/matchHistoryFilterOptions.json';
 import { Radar } from 'react-chartjs-2';
 import { server } from '../../config/server';
+import BotNav from '../../components/BotNav';
 
 const Profile = ({ data }) => {
     console.log(`Server: ${server}`);
@@ -143,6 +144,9 @@ const Profile = ({ data }) => {
                         />
                     </div>
                 </div>
+                <BotNav
+                    navItems={['Rank', 'History', 'Style']}
+                />
             </div>
         </Layout>
     )
