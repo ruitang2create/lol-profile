@@ -6,10 +6,13 @@
     padding: 10px;
 }
 
+.FooterContainer {
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+}
+
 @media screen and (max-width: 1300px) {
     .FooterContainer {
-        font-size: clamp(1vh, );
-        padding: 0.5rem calc((100vw - 1200px)/2);
+        padding: 0.5rem;
         text-align: center;
         z-index: 10;
         color: #999;
@@ -18,7 +21,6 @@
 
 @media screen and (min-width: 1300px) {
     .FooterContainer {
-        font-size: clamp(1vh, );
         padding: 0.5rem calc((100vw - 1200px)/2);
         text-align: center;
         z-index: 10;
