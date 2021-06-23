@@ -22,6 +22,7 @@ export default function Home() {
           <div className={styles.SearchContainer}>
             <form className={styles.SearchForm} onSubmit={search}>
               <input
+                className={styles.SearchInput}
                 placeholder="Summoner Id..."
                 onChange={(e) => setSearchId(e.target.value)}
               />
